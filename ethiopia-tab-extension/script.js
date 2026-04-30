@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       quoteLabel: "ጥቅስ",
       photoAria: "የፎቶ ምንጭ",
       photoTitlePrefix: "ፎቶ",
-      ethiopianCalendarLabel: "የኢትዮጵያ ቀን መቁጠሪያ"
+      ethiopianCalendarLabel: "በኢትዮጵያ"
     },
     en: {
       pageTitle: "Ethiopia Tab",
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       quoteLabel: "Quote",
       photoAria: "Photo source",
       photoTitlePrefix: "Photo",
-      ethiopianCalendarLabel: "Ethiopian calendar"
+      ethiopianCalendarLabel: "Ethio"
     }
   };
 

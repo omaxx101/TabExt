@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ኢትዮጵያ ታብ</title>
+  <title id="pageTitle">ኢትዮጵያ ታብ</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -15,7 +15,7 @@
 
   <!-- TOP LEFT: GREETING -->
   <section class="panel greeting-card">
-    <div class="card-label"></div>
+    <div class="card-label" id="greetingLabel"></div>
     <p class="greeting-text" id="greetingText">
       ሰላም
    </p>
@@ -29,7 +29,7 @@
 
   <!-- TIme * Date -->
   <section class="time-date-card panel"> 
-    <div class="card-label"> አዲስ አበባ / Addis Ababa GMT +03:00 </div> 
+    <div class="card-label" id="timeZoneLabel"> አዲስ አበባ GMT +03:00 </div> 
     <div class="time-date-row"> 
       <h1 id="time" class="time"></h1> 
       <div class="date-block">
@@ -40,14 +40,21 @@
 
   <!-- BOTTOM RIGHT: QUOTE + PHOTO -->
   <section class="panel quote-card">
-    <div class="card-label">ጥቅስ / QUOTE</div>
+    <div class="card-label" id="quoteLabel">ጥቅስ</div>
 
     <p id="quote"></p>
     <p id="translation"></p>
 
-    <a id="photoLink" target="_blank" class="photo-link">
-      📷 
-    </a>
+    <div class="quote-actions">
+      <a id="photoLink" target="_blank" class="photo-link" aria-label="Photo source">
+        📷
+      </a>
+
+      <div class="language-switch" aria-label="Language switcher">
+        <button id="amButton" class="language-option" type="button">አማርኛ</button>
+        <button id="enButton" class="language-option" type="button">English</button>
+      </div>
+    </div>
   </section>
 
   <script src="script.js"></script>
